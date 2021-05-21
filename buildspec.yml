@@ -13,7 +13,7 @@ phases:
   build:
     commands:
     - echo building the Java Application
-    - mvn clean install -DskipTests
+    - mvn install
 artifacts:
   files:
   - target/*.jar
