@@ -12,8 +12,11 @@ phases:
   #  - apt-get install -y maven
   build:
     commands:
+    - echo Build started on `date`
+    - java -version
+    - mvn -v
     - echo building the Java Application
-    - mvn install
+    - mvn clean install -DskipTests
 artifacts:
   files:
   - target/*.jar
