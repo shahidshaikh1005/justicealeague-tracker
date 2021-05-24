@@ -9,7 +9,7 @@ phases:
     commands:
     - echo installing Java and Maven...
     - apt-get update -y
-    - apt-get install openjdk-8-jdk
+    - apt-get install -y openjdk-8-jdk
     - apt-get install -y maven
   build:
     commands:
