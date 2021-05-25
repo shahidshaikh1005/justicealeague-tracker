@@ -6,10 +6,11 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      java: openjdk-8-jdk
     commands:
     - echo installing Java and Maven...
     - apt-get update -y
-    - apt-get install -y openjdk-8-jdk
     - apt-get install -y maven
   build:
     commands:
